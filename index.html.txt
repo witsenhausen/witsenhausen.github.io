@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p1>I have a website now!</p1>
+  </body>
+</html>
