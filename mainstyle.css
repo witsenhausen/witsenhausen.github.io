@@ -17,6 +17,10 @@ font-size: 25px;
 font-family: "Consolas", Monaco, monospace;
 }
 
+h6 {
+	background-color: dimgray;
+}
+
 div {
 	background-color: silver;
 	border-radius: 25px;
