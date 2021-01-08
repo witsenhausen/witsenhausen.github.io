@@ -16,3 +16,17 @@ h2 {
 font-size: 25px;
 font-family: "Consolas", Monaco, monospace;
 }
+
+th {
+	text-decoration: underline overline;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+}
+
+td {
+font-size: 50px;
+font-family: "Consolas", Monaco, monospace;
+  }
+	
+	
