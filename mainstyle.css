@@ -1,5 +1,5 @@
 body {
-  background-color: lightslategray;
+  background-color: darkslategray;
 }
 header {
 font-family: "Courier New", Courier, monospace;
@@ -17,6 +17,11 @@ font-size: 25px;
 font-family: "Consolas", Monaco, monospace;
 }
 
+div {
+	background-color: lightslategray;
+	border-radius: 25px;
+}
+	
 th {
 	text-decoration: underline overline;
   font-size: 50px;
