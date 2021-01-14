@@ -17,6 +17,11 @@ font-size: 25px;
 font-family: "Consolas", Monaco, monospace;
 }
 
+h3 {
+font-size: 15px;
+font-family: "Consolas", Monaco, monospace;
+}
+
 h6 {
 	background-color: dimgray;
 }
@@ -24,6 +29,7 @@ h6 {
 div {
 	background-color: silver;
 	border-radius: 25px;
+	font-family: "Consolas", Monaco, monospace;
 }
 	
 th {
@@ -37,8 +43,7 @@ td {
 font-size: 40px;
 font-family: "Consolas", Monaco, monospace;
   }
-  
- a {
-	 font-family: "Consolas", Monaco, monospace;
+
+	 
 	
 	
