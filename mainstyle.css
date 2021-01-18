@@ -9,6 +9,7 @@ font-family: "Courier New", Courier, monospace;
 font-weight: normal;
 font-size: 100px;
 background: rgba(150, 150, 150, 0.7);
+border-radius: 25px;
 }
 h1 {
   text-decoration: underline overline;
