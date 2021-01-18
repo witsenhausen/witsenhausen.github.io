@@ -1,5 +1,8 @@
 body {
   background-image: url('bismuth1bw.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 header {
 font-family: "Courier New", Courier, monospace;
@@ -23,6 +26,7 @@ font-family: "Consolas", Monaco, monospace;
 
 h6 {
 	background-color: dimgray;
+	opacity: 1;
 }
 
 div {
