@@ -1,5 +1,5 @@
 body {
-  background-color: dimgray;
+  background-image: url('bismuth1bw.jpg');
 }
 header {
 font-family: "Courier New", Courier, monospace;
@@ -27,6 +27,7 @@ h6 {
 
 div {
 	background-color: silver;
+	opacity: 0.5;
 	border-radius: 25px;
 	font-family: "Consolas", Monaco, monospace;
 }
