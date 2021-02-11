@@ -48,11 +48,16 @@ font-size: 40px;
 font-family: "Consolas", Monaco, monospace;
   }
   
+  #navbar {
+	  padding-right: 50px;
+	  padding-left: 50px;
+  
  #googlesearch {
  }
  
  #divider {
 	 background: rgba('244, 0, 244, 1');
+
 
 	 
 	
