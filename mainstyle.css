@@ -3,6 +3,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  margin: 0px;
 }
 header {
 font-family: "Courier New", Courier, monospace;
