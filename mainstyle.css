@@ -63,8 +63,10 @@ font-family: "Consolas", Monaco, monospace;
  
  #divider {
 	 background: rgba('244, 0, 244, 1');
-
-
-	 
+ }
+ 
+#hoverhidden:hover {
+	 opacity: 1;
+}
 	
 	
