@@ -1,3 +1,8 @@
+@font-face {
+font-family: daedric;
+src: url(Daedra.otf);
+}
+
 body {
   background-image: url('bismuth1bw.jpg');
   background-size: cover;
