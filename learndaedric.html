@@ -20,9 +20,9 @@
 <p id="example"></p>
 
 <h2>Re-type:</h2>
-<input type="text" id="retype" height="500" size="100" value="">
+<textarea rows="250" cols="500" id="retype"></textarea>
 
-<h2>Results</h2>
+<h2>Results</h2> <button onclick="checkanswer()">Check answer</button>
 <p id="results"></p>
 
 <script>
@@ -30,6 +30,7 @@ var a = "Crab Meat and Scuttle 2 handfuls of scuttle 4 pinches of wickwheat 1 la
 var b = "The Hound and Rat 1 pie crust 1 pound of ground meat (mixed rat and hound) a hand and a half of cooked saltrice 1 handful of scuttle 1 small kwama egg a pinch of ash salts"; 
 var c = "toptext";
 var selection;
+
 function chooseExample() {
   var rng = Math.floor((Math.random() * 2) + 1);
 if (rng == 1) {
@@ -39,6 +40,15 @@ if (rng == 2) {
   selection = b;
   }
 document.getElementById("example").innerHTML = selection;
+}
+
+function checkanswer() {
+var retype = document.getElementById("retype").value;
+  if (retype == selection) {
+  document.getElementById("results").innerHTML = "correct";
+  } else {
+  document.getElementById("results").innerHTML = "incorrect";
+  }
 }
 </script>
 
