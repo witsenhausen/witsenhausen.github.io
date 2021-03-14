@@ -34,11 +34,15 @@ font-family: "morrowind";
 }
 
 h3 {
-font-family: "morrowind;
+font-family: "morrowind";
 }
 
 h6 {
 	
+}
+
+p {
+font-family: "morrowind";	
 }
 
 div {
