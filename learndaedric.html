@@ -26,18 +26,114 @@
 <p id="results"></p>
 
 <script>
-var a = "Crab Meat and Scuttle 2 handfuls of scuttle 4 pinches of wickwheat 1 large kwama egg the meat of one mudcrab (two portions) 1 handful of chopped bittergreen";
-var b = "The Hound and Rat 1 pie crust 1 pound of ground meat (mixed rat and hound) a hand and a half of cooked saltrice 1 handful of scuttle 1 small kwama egg a pinch of ash salts"; 
-var c = "toptext";
+var a = "The designations of Gods, Demons, Aedra, and Daedra, are universally confusing to the layman. They are often used interchangeably.";
+var b = '"Aedra" and "Daedra" are not relative terms. They are Elvish and exact. Azura is a Daedra both in Skyrim and Morrowind. "Aedra" is usually translated as "ancestor," which is as close as Cyrodilic can come to this Elven concept. "Daedra" means, roughly, "not our ancestors." This distinction was crucial to the Dunmer, whose fundamental split in ideology is represented in their mythical genealogy.'; 
+var c = "Aedra are associated with stasis. Daedra represent change. Aedra created the mortal world and are bound to the Earth Bones. Daedra, who cannot create, have the power to change. As part of the divine contract of creation, the Aedra can be killed. Witness Lorkhan and the moons. The protean Daedra, for whom the rules do not apply, can only be banished.";
+var d = "Most Daedric servants can be summoned by sorcerers only for very brief periods, within the most fragile and tenuous frameworks of command and binding. This fortunately limits their capacity for mischief, though in only a few minutes, most of these servants can do terrible harm to their summoners as well as their enemies.";
+var e = "Worshippers may bind other Daedric servants to this plane through rituals and pacts. Such arrangements result in the Daedric servant remaining on this plane indefinitely -- or at least until their bodily manifestations on this plane are destroyed, precipitating their supernatural essences back to Oblivion. Whenever Daedra are encountered at Daedric ruins or in tombs, they are almost invariably long-term visitors to our plane.";
+var f = "Likewise, lesser entities bound by their Daedra Lords into weapons and armor may be summoned for brief periods, or may persist indefinitely, so long as they are not destroyed and banished. The class of bound weapons and bound armors summoned by Temple followers and conjurors are examples of short-term bindings; Daedric artifacts like Mehrunes Razor and the Mask of Clavicus Vile are examples of long-term bindings.";
+var g = "The Tribunal Temple of Morrowind has incorporated the veneration of Daedra as lesser spirits subservient to the immortal Almsivi, the Triune godhead of Almalexia, Sotha Sil, and Vivec. These subordinate Daedra are divided into the Good Daedra and the Bad Daedra. The Good Daedra have willingly submitted to the authority of Almsivi; the Bad Daedra are rebels who defy Almsivi -- treacherous kin who are more often adversaries than allies.";
+var h = "The Good Daedra are Boethiah, Azura, and Mephala. The hunger is a powerful and violent lesser Daedra associated with Boethiah, Father of Plots -- a sinuous, long-limbed, long-tailed creature with a beast-skulled head, noted for its paralyzing touch and its ability to disintegrate weapons and armor. The winged twilight is a messenger of Azura, Goddess of Dusk and Dawn. Winged twilights resemble the feral harpies of the West, though the feminine aspects of the winged twilights are more ravishing, and their long, sharp, hooked tails are immeasurably more deadly. Spider Daedra are the servants of Mephala, taking the form of spider-humanoid centaurs, with a naked upper head, torso, and arms of human proportions, mounted on the eight legs and armored carapace of a giant spider. Unfortunately, these Daedra are so fierce and irrational that they cannot be trusted to heed the commands of the Spinner. As a consequence, few sorcerers are willing to either summon or bind such creatures in Morrowind.";
+var i = "The Bad Daedra are Mehrunes Dagon, Malacath, Sheogorath, and Molag Bal. Three lesser Daedra are associated with Mehrunes Dagon: the agile and pesky scamp, the ferocious and beast-like clannfear, and the noble and deadly dremora. The crocodile-headed humanoid Daedra called the daedroth is a servant of Molag Bal, while the giant but dim-witted ogrim is a servant of Malacath. Sheogorath's lesser Daedra, the golden saint, a half-clothed human female in appearance, is highly resistant to magic and a dangerous spellcaster.";
+var j = "Another type of lesser Daedra often encountered in Morrowind is the Atronach, or Elemental Daedra. Atronachs have no binding kinship or alignments with the Daedra Lords, serving one realm or another at whim, shifting sides according to seduction, compulsion, or opportunity.";
+var k = 'It is improper, however customary, to refer to the denizens of the dimension of Oblivion as "demons." This practice probably dates to the Alessian Doctrines of the First Era prophet Marukh -- which, rather amusingly, forbade "trafficke with daimons" and then neglected to explain what daimons were.';
+var l = 'It is most probable that "daimon" is a misspelling or etymological rendition of "Daedra," the old Elven word for those strange, powerful creatures of uncertain motivation who hail from the dimension of Oblivion. ("Daedra" is actually the plural form; the singular is "Daedroth.") In a later tract by King Hale the Pious of Skyrim, almost a thousand years after the publication of the original Doctrines, the evil machinations of his political enemies are compared to "the wickedness of the demons of Oblivion... their depravity equals that of Sanguine itself, they are cruel as Boethiah, calculating as Molag Bal, and mad as Sheogorath." Hale the Pious thus long-windedly introduced four of the Daedra lords to written record.';
+var m = 'But the written record is not, after all, the best way to research Oblivion and the Daedra who inhabit it. Those who "trafficke with daimons" seldom wish it to be a matter of public account. Nevertheless, scattered throughout the literature of the First Era are diaries, journals, notices for witch burnings, and guides for Daedra-slayers. These I have used as my primary source material. They are at least as trustworthy as the Daedra lords I have actually summoned and spoken with at length.';
+var n = "Apparently, Oblivion is a place composed of many lands -- thus the many names for which Oblivion is synonymous: Coldharbour, Quagmire, Moonshadow, etc. It may be correctly supposed that each land of Oblivion is ruled over by one prince. The Daedra princes whose names appear over and over in ancient records (though this is not an infallible test of their authenticity or explicit existence, to be sure) are the afore-mentioned Sanguine, Boethiah, Molag Bal, and Sheogorath, and in addition, Azura, Mephala, Clavicus Vile, Vaernima, Malacath, Hoermius (or Hermaeus or Hormaius or Herma -- there seems to be no one accepted spelling) Mora, Namira, Jyggalag, Nocturnal, Mehrunes Dagon, and Peryite.";
+var o = "From my experience, Daedra are a very mixed lot. It is almost impossible to categorize them as a whole except for their immense power and penchant for extremism. Be that as it may, I have here attempted to do so in a few cases, purely for the sake of scholastic expediency.";
+var p = 'Mehrunes Dagon, Molag Bal, Peryite, Boethiah, and Vaernima are among the most consistently "demonic" of the Daedra, in the sense that their spheres seem to be destructive in nature. The other Daedra can, of course, be equally dangerous, but seldom purely for the sake of destruction as these five can. Nor are these previous five identical in their destructiveness. Mehrunes Dagon seems to prefer natural disasters -- earthquakes and volcanoes -- for venting his anger. Molag Bal elects the employment of other daedra, and Boethiah inspires the arms of mortal warriors. Peryite\'s sphere seems to be pestilence, and Vaernima\'s torture.';
+var q = 'In preparation for the next installment in this series, I will be investigating two matters that have intrigued me since I began my career as a Daedra researcher. The first is on one particular Daedroth, perhaps yet another Daedra prince, referred to in multiple articles of incunabula as Hircine. Hircine has been called "the Huntsman of the Princes" and "the Father of Man-beasts," but I have yet to find anyone who can summon him. The other, and perhaps more doubtful, goal I have is to find a practical means for mortal men to pass through to Oblivion. It has always been my philosophy that we need only fear that which we do not understand -- and with that thought in mind, I ever pursue my objective.';
+var r = "By opening this volume you have taken the first step on a truly epic journey, a voyage through the vast landscape of Breton food and its myriad joys and wonders. You will explore scents, flavors and textures so exquisite, they will seem impossible. But they are more than possible!";
+var s = "Indeed, by following the carefully selected recipes presented in this cookbook, you will prepare extraordinary dishes with such ordinary ease, those around you will suspect sorcery. But the only magic is that which exists in your own heart, the passion you possess for creating delicious, amazing food that can be prepared easily, and enjoyed endlessly. Start here, and some day, you too can be a Gourmet!";
+var t = "The question: It has a tail, a side and a head I call it what I call a snake It has no body and it is dead. The answer: It must be a drake";
+var u = "The question: Poets know the hearts of Men and Mer But beasts can\'t know my heart, you see This book was written by a bear. The answer: It is not a book of poetry.";
+var v = "The question: I gave you a sock, not unlike a box With hammers and nails all around it Two lids open when it knocks. The answer: It must have been a great hit.";
+var w = "A metal neither black nor red As heavy as man's golden greed What you do to stay ahead With friend or arrow or steed. The Answer: Lead.";
+var x = 'A man says, "If you lie to me I will slay you with my sword. If you tell me the truth, I will slay you with a spell." What must you say to stay alive? The Answer: You will slay me with a sword.';
+var y = "A Bosmer, was slain. The Altmer claims the Dunmer is guilty. The Dunmer says the Khajiit did it. The Orc swears he didn't kill the Bosmer. The Khajiit says the Dunmer is lying. If only one of these speaks the truth, who killed the Bosmer? The Answer: The Orc";
+var z = "A is for Atronach. B is for Bungler's Bane. C is for Comberry.";
+
 var selection;
 
 function chooseExample() {
-  var rng = Math.floor((Math.random() * 2) + 1);
+  var rng = Math.floor((Math.random() * 26) + 1);
 if (rng == 1) {
   selection = a;
   }
 if (rng == 2) {
   selection = b;
+  }
+  if (rng == 3) {
+  selection = c;
+  }
+  if (rng == 4) {
+  selection = d;
+  }
+  if (rng == 5) {
+  selection = e;
+  }
+  if (rng == 6) {
+  selection = f;
+  }
+  if (rng == 7) {
+  selection = g;
+  }
+  if (rng == 8) {
+  selection = h;
+  }
+  if (rng == 9) {
+  selection = i;
+  }
+  if (rng == 10) {
+  selection = j;
+  }
+  if (rng == 11) {
+  selection = k;
+  }
+  if (rng == 12) {
+  selection = l;
+  }
+  if (rng == 13) {
+  selection = m;
+  }
+  if (rng == 14) {
+  selection = n;
+  }
+  if (rng == 15) {
+  selection = o;
+  }
+  if (rng == 16) {
+  selection = p;
+  }
+  if (rng == 17) {
+  selection = q;
+  }
+  if (rng == 18) {
+  selection = r;
+  }
+  if (rng == 19) {
+  selection = s;
+  }
+  if (rng == 20) {
+  selection = t;
+  }
+  if (rng == 21) {
+  selection = u;
+  }
+  if (rng == 22) {
+  selection = v;
+  }
+  if (rng == 23) {
+  selection = w;
+  }
+  if (rng == 24) {
+  selection = x;
+  }
+  if (rng == 25) {
+  selection = y;
+  }
+  if (rng == 26) {
+  selection = z;
   }
 document.getElementById("example").innerHTML = selection;
 }
