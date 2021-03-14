@@ -1,0 +1,79 @@
+@font-face {
+font-family: daedric;
+src: url(Daedra.otf);
+}
+
+@font-face {
+font-family: morrowind;
+src: url(MagicCardsNormal.ttf);
+}
+
+body {
+  background-color: blanchedalmond;
+  margin: 0px;
+}
+header {
+font-family: "Courier New", Courier, monospace;
+font-weight: normal;
+font-size: 100px;
+/*background: rgba(150, 150, 150, 1*/
+border-radius: 0px;
+background-image: url('bismuth1faded.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-decoration: underline overline;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+}
+h2 {
+font-size: 25px;
+font-family: "Consolas", Monaco, monospace;
+}
+
+h3 {
+font-family: "Consolas", Monaco, monospace;
+}
+
+h6 {
+	
+}
+
+div {
+	background: rgba(200, 200, 200, 0.7);
+	border-radius: 25px;
+	font-family: "Consolas", Monaco, monospace;
+}
+	
+th {
+	text-decoration: underline overline;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+}
+
+td {
+font-size: 40px;
+font-family: "Consolas", Monaco, monospace;
+  }
+  
+  #navbar {
+	  padding-right: 50px;
+	  padding-left: 50px;
+  }
+  
+ #googlesearch {
+ }
+ 
+ #divider {
+	 background: rgba('244, 0, 244, 1');
+ }
+ 
+#hoverhidden:hover {
+	 opacity: 1;
+}
+	
+	
