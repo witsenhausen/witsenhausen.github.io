@@ -24,18 +24,17 @@ background-image: url('bismuth1faded.jpg');
   background-repeat: no-repeat;
 }
 h1 {
-  text-decoration: underline overline;
   font-size: 50px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: normal;
+  font-family: "morrowind";
+
 }
 h2 {
 font-size: 25px;
-font-family: "Consolas", Monaco, monospace;
+font-family: "morrowind";
 }
 
 h3 {
-font-family: "Consolas", Monaco, monospace;
+font-family: "morrowind;
 }
 
 h6 {
@@ -43,21 +42,15 @@ h6 {
 }
 
 div {
-	background: rgba(200, 200, 200, 0.7);
-	border-radius: 25px;
-	font-family: "Consolas", Monaco, monospace;
+
 }
 	
 th {
-	text-decoration: underline overline;
-  font-size: 50px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: normal;
+	
 }
 
 td {
-font-size: 40px;
-font-family: "Consolas", Monaco, monospace;
+
   }
   
   #navbar {
