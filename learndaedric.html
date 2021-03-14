@@ -16,7 +16,7 @@
 
 <h1 align="center">Daedric Typing Game</h1>
 
-<h2>Example</h2>
+<h2>Example</h2> <button onclick="chooseExample()">Load different example</button>
 <p id="example"></p>
 
 <h2>Re-type:</h2>
@@ -37,10 +37,14 @@ document.getElementById("demo").innerHTML = "My First JavaScript";
 var a = "Crab Meat and Scuttle 2 handfuls of scuttle 4 pinches of wickwheat 1 large kwama egg the meat of one mudcrab (two portions) 1 handful of chopped bittergreen";
 var b = "The Hound and Rat 1 pie crust 1 pound of ground meat (mixed rat and hound) a hand and a half of cooked saltrice 1 handful of scuttle 1 small kwama egg a pinch of ash salts"; 
 var c = "toptext";
-function myFunction() {
-  var selection = Math.floor((Math.random() * 2) + 1);
+function chooseExample() {
+  var rng = Math.floor((Math.random() * 2) + 1);
+if (rng == 1) {
+  selection = a;}
+if (rng == 2) {
+  selection = b;}
   }
-document.getElementById("example").innerHTML = a;
+document.getElementById("example").innerHTML = selection;
 </script>
 
 </body>
