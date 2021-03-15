@@ -70,7 +70,7 @@ td {
 	 background: rgba('244, 0, 244, 1');
  }
  
-#hoverhidden:hover {
+img:hover {
 	 opacity: 1;
 }
 	
