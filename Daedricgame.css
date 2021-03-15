@@ -58,6 +58,10 @@ td {
 font-family: "daedric";
   }
   
+  a {
+	  font-family: "Courier New", Courier, monospace;
+  }
+  
   #navbar {
 	  padding-right: 50px;
 	  padding-left: 50px;
