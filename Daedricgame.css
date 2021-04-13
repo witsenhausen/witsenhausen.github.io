@@ -61,6 +61,7 @@ font-family: "daedric";
   
   a {
 	  font-family: "Courier New", Courier, monospace;
+font-weight: normal;
   }
   
   #navbar {
